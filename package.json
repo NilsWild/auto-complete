@@ -1,6 +1,6 @@
 {
   "name": "ngx-auto-complete",
-  "version": "0.16.2",
+  "version": "0.17.0",
   "description": "Angular Input Autocomplete. Forked from @ngui/auto-complete",
   "license": "MIT",
   "main": "dist/auto-complete.umd.js",
