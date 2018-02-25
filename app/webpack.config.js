@@ -8,7 +8,7 @@ const config = {
     resolve: {
         extensions: ['.ts', '.webpack.js', '.web.js', '.js'],
         alias: {
-            'ngx-auto-complete': path.join(__dirname, '..', 'src', 'index')
+            '-auto-complete': path.join(__dirname, '..', 'src', 'index')
         }
     },
     devtool: 'source-map',
@@ -65,9 +65,6 @@ if (process.env.NODE_ENV === 'prod') {
             }
         )
     ];
-    config.module.rules.push({
-        test: /\.ts$/, use: 'strip-loader?strip[]=debug,strip[]=console.log'
-    });
 }
 
 module.exports = config;
