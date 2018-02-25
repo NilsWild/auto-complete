@@ -1,3 +1,5 @@
+### [0.17.0]
+- Renamed to ngx-auto-complete
 ### [0.16.2]
 - Forked from ngui-auto-complete
 - Renamed to veden-auto-complete

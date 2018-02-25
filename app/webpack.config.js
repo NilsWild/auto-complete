@@ -8,7 +8,7 @@ const config = {
     resolve: {
         extensions: ['.ts', '.webpack.js', '.web.js', '.js'],
         alias: {
-            'veden-auto-complete': path.join(__dirname, '..', 'src', 'index')
+            'ngx-auto-complete': path.join(__dirname, '..', 'src', 'index')
         }
     },
     devtool: 'source-map',

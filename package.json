@@ -1,5 +1,5 @@
 {
-  "name": "veden-auto-complete",
+  "name": "ngx-auto-complete",
   "version": "0.16.2",
   "description": "Angular Input Autocomplete. Forked from @ngui/auto-complete",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "@angular/compiler-cli": "5.2.0",
     "@angular/core": "5.2.0",
     "@angular/forms": "5.2.0",
-    "@angular/material": "5.2.2",
     "@angular/platform-browser": "5.2.0",
     "@angular/platform-browser-dynamic": "5.2.0",
     "@angular/router": "5.2.0",

@@ -1,4 +1,4 @@
-# veden-auto-complete
+# ngx-auto-complete
 
 Forked from [ng2-ui auto-complete](https://github.com/ng2-ui/auto-complete)
 
@@ -37,17 +37,17 @@ _FormControl_ http://plnkr.co/edit/A5CW2e?p=preview
 
 ## Install
 
-1. install veden-auto-complete
+1. install ngx-auto-complete
 
-        $ npm install veden-auto-complete --save
+        $ npm install ngx-auto-complete --save
 
 2. add `map` and `packages` to your `systemjs.config.js` unless you are using `webpack`
 
-        map['veden-auto-complete'] = 'node_modules/veden-auto-complete/dist/auto-complete.umd.js';
+        map['ngx-auto-complete'] = 'node_modules/ngx-auto-complete/dist/auto-complete.umd.js';
 
 3. import NguiAutoCompleteModule to your AppModule
 
-        import { NguiAutoCompleteModule } from 'veden-auto-complete';
+        import { NguiAutoCompleteModule } from 'ngx-auto-complete';
 
         @NgModule({
           imports: [BrowserModule, FormsModule, NguiAutoCompleteModule],
