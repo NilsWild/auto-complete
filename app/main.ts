@@ -8,7 +8,6 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
 import {NguiUtilsModule} from '@ngui/utils';
 import {MatInputModule} from '@angular/material';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
@@ -19,6 +18,7 @@ import {NguiAutoCompleteModule} from '../src/auto-complete.module';
 
 import {APP_ROUTER_COMPONENTS, APP_ROUTER_PROVIDERS} from './app.route';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     imports: [
@@ -26,7 +26,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         BrowserAnimationsModule,
         APP_ROUTER_PROVIDERS,
         FormsModule,
-        HttpModule,
+        HttpClientModule,
         NguiUtilsModule,
         MatInputModule,
         NguiAutoCompleteModule

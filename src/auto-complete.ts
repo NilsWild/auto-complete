@@ -1,7 +1,7 @@
 import { Injectable, Optional } from "@angular/core";
-import { Http, Response } from "@angular/http";
 import { Observable } from "rxjs";
 import "rxjs/add/operator/map";
+import {HttpClient} from '@angular/common/http';
 
 /**
  * provides auto-complete related utility functions
@@ -13,7 +13,7 @@ export class NguiAutoComplete {
   public pathToData: string;
   public listFormatter: (arg: any) => string;
 
-  constructor(@Optional() private http: Http) {
+  constructor(@Optional() private http: HttpClient) {
     // ...
   }
 
@@ -54,7 +54,7 @@ export class NguiAutoComplete {
     if (typeof this.source !== 'string') {
       throw "Invalid type of source, must be a string. e.g. http://www.google.com?q=:my_keyword";
     } else if (!this.http) {
-      throw "Http is required.";
+      throw "HttpClient is required.";
     }
 
     let matches = this.source.match(/:[a-zA-Z_]+/);
@@ -65,8 +65,7 @@ export class NguiAutoComplete {
     let replacementWord = matches[0];
     let url = this.source.replace(replacementWord, keyword);
 
-    return this.http.get(url)
-      .map(resp => resp.json())
+    return this.http.get<any>(url)
       .map(resp => {
         let list = resp.data || resp;
 

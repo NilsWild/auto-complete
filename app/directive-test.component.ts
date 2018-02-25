@@ -1,4 +1,3 @@
-import {Http} from "@angular/http";
 import {Component, ViewEncapsulation} from "@angular/core";
 import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 
@@ -201,7 +200,6 @@ export class DirectiveTestComponent {
   model8 = "";
 
   constructor (
-    public http: Http,
     public appSvc : AppSvc,
     private _sanitizer: DomSanitizer ) {
   }
